@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <title>多块好省，购物上京东</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/jd.css">
+        <style>
+            html {
+                font-size: 15px;
+            }
+        </style>
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/jd.js"></script>
+    </head>
+    <body style="max-width: 640px;min-width: 320px">
+        <div class="jd_content">
+            <div class="jd_header">
+                <div class="head_item">
+                    <span></span>
+                </div>
+                <div class="head_search">
+                    <i></i>
+                    <form action="">
+                        <input type="text" placeholder="扫地机器人 智能">
+                    </form>
+                </div>
+                <div class="head_login">
+                    <a href="javascript:;"><span>登录</span></a>
+                </div>
+            </div>
+            <div class="main_content">
+                <div class="jd_banner">
+                    <ul>
+                        <li><a href="javascript:;"><img src="upload/banner_1.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="upload/banner_2.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="upload/banner_3.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="upload/banner_4.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="upload/banner_5.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="upload/banner_6.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="upload/banner_7.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="upload/banner_8.jpg" alt=""></a></li>
+                    </ul>
+                    <div class="slider_circle">
+                        <ol>
+                            <li class="circle_style active"></li>
+                            <li class="circle_style"></li>
+                            <li class="circle_style"></li>
+                            <li class="circle_style"></li>
+                            <li class="circle_style"></li>
+                            <li class="circle_style"></li>
+                            <li class="circle_style"></li>
+                            <li class="circle_style"></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="jd_nav_box">
+                    <div class="nav_box">
+                        <a href="javascript:;"><img src="upload/item1.png" alt=""><span>京东超市</span></a>
+                        <a href="javascript:;"><img src="upload/item2.png" alt=""><span>数码电器</span></a>
+                        <a href="javascript:;"><img src="upload/item3.png" alt=""><span>京东服饰</span></a>
+                        <a href="javascript:;"><img src="upload/item4.png" alt=""><span>京东生鲜</span></a>
+                        <a href="javascript:;"><img src="upload/item5.png" alt=""><span>京东到家</span></a>
+                        <a href="javascript:;"><img src="upload/item6.png" alt=""><span>充值缴费</span></a>
+                        <a href="javascript:;"><img src="upload/item7.png" alt=""><span>9.9元拼</span></a>
+                        <a href="javascript:;"><img src="upload/item8.png" alt=""><span>领劵</span></a>
+                        <a href="javascript:;"><img src="upload/item9.png" alt=""><span>全球购</span></a>
+                        <a href="javascript:;"><img src="upload/item9.png" alt=""><span>plus会员</span></a>
+                    </div>
+                    <div class="box_nav">
+                        <b class="cur"></b>
+                        <b class="cur_2"></b>
+                    </div>
+                </div>
+                <div class="jd_kill_floor">
+                    <div class="kill_content">
+                        <div class="title">
+                            <div class="title_img"></div>
+                            <span>10点场</span>
+                            <div class="kill_timer">
+                                <div class="kill_time">10</div>
+                                <span>:</span>
+                                <div class="kill_time">10</div>
+                                <span>:</span>
+                                <div class="kill_time">10</div>
+                            </div>
+                            <a href="javascript:;" class="kill-link">
+                                更多精彩
+                                <i class="link-item"></i>
+                            </a>
+                        </div>
+                        <div class="floor_container">
+                            <ul>
+                                <li>
+                                    <img src="upload/killer2.jpg" alt="">
+                                    <div class="killer_price">
+                                        <span class="new_price">
+                                            <em>￥</em>
+                                            <span>1949</span>
+                                        </span>
+                                        <span class="old_price">
+                                            <em>￥</em>
+                                            <span>2599</span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="upload/killer1.jpg" alt="">
+                                    <div class="killer_price">
+                                        <span class="new_price">
+                                            <em>￥</em>
+                                            <span>2999</span>
+                                        </span>
+                                        <span class="old_price">
+                                            <em>￥</em>
+                                            <span>3000</span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="upload/killer3.jpg" alt="">
+                                    <div class="killer_price">
+                                        <span class="new_price">
+                                            <em>￥</em>
+                                            <span>2900</span>
+                                        </span>
+                                        <span class="old_price">
+                                            <em>￥</em>
+                                            <span>3999</span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="upload/killer4.jpg" alt="">
+                                    <div class="killer_price">
+                                        <span class="new_price">
+                                            <em>￥</em>
+                                            <span>2900</span>
+                                        </span>
+                                        <span class="old_price">
+                                            <em>￥</em>
+                                            <span>3999</span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="upload/killer5.jpg" alt="">
+                                    <div class="killer_price">
+                                        <span class="new_price">
+                                            <em>￥</em>
+                                            <span>1949</span>
+                                        </span>
+                                        <span class="old_price">
+                                            <em>￥</em>
+                                            <span>2599</span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="upload/killer3.jpg" alt="">
+                                    <div class="killer_price">
+                                        <span class="new_price">
+                                            <em>￥</em>
+                                            <span>1949</span>
+                                        </span>
+                                        <span class="old_price">
+                                            <em>￥</em>
+                                            <span>2599</span>
+                                        </span>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad_banner">
+                    <img src="upload/ad_banner.gif" alt="">
+                    <img src="upload/ad_banner.jpg" alt="">
+                </div>
+                <div class="recommend_shop">
+                    <div class="shop_content">
+                        <div class="shop_first">
+                            <div class="first_left">
+                                <div class="first_text">
+                                    <span>程序猿</span>
+                                    <p>我的世界你不懂</p>
+                                </div>
+                                <div class="first_img">
+                                    <div class="_img">
+                                        <a href="javascript:;"><img src="upload/img1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="_img">
+                                        <a href="javascript:;"><img src="upload/img2.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="first_right">
+                                <div class="first_text">
+                                    <span>极客视界</span>
+                                    <p>多一度热爱</p>
+                                </div>
+                                <div class="first_img">
+                                    <div class="_img">
+                                        <a href="javascript:;"><img src="upload/img3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="_img">
+                                        <a href="javascript:;"><img src="upload/img4.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop_second">
+                            <div class="second_shops">
+                                <div class="second_text">
+                                    <span>安心生活</span>
+                                    <p>幸福每一天</p>
+                                </div>
+                                <div class="second_img">
+                                    <img src="upload/img5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="second_shops">
+                                <div class="second_text">
+                                    <span>安心生活</span>
+                                    <p>幸福每一天</p>
+                                </div>
+                                <div class="second_img">
+                                    <img src="upload/img6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="second_shops">
+                                <div class="second_text">
+                                    <span>安心生活</span>
+                                    <p>幸福每一天</p>
+                                </div>
+                                <div class="second_img">
+                                    <img src="upload/img7.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="second_shops">
+                                <div class="second_text">
+                                    <span>安心生活</span>
+                                    <p>幸福每一天</p>
+                                </div>
+                                <div class="second_img">
+                                    <img src="upload/img8.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad_banner">
+                    <img src="upload/ad_banner2.jpg" alt="">
+                </div>
+                <div class="recommend_shop">
+                    <div class="shop_content">
+                        <div class="shop2_first">
+                            <div class="shop2_content color_one">
+                                <div class="shop2_text">
+                                    <span>免息星球</span>
+                                    <p>白条免息购</p>
+                                </div>
+                                <div class="second_img">
+                                    <img src="upload/img9.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="shop2_content color_one">
+                                <div class="shop2_text">
+                                    <span>品牌闪购</span>
+                                    <p>购大牌好物</p>
+                                </div>
+                                <div class="second_img">
+                                    <img src="upload/img10.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="shop2_content color_one">
+                                <div class="shop2_text">
+                                    <span>品牌秒杀</span>
+                                    <p>低价抢大牌</p>
+                                </div>
+                                <div class="second_img">
+                                    <img src="upload/img11.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="shop2_content color_one">
+                                <div class="shop2_text">
+                                    <span>京东直播</span>
+                                    <p>边看边买</p>
+                                </div>
+                                <div class="second_img">
+                                    <img src="upload/img12.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop2_first">
+                            <div class="shop2_content border">
+                                <div class="shop2_text">
+                                    <span>排行榜</span>
+                                    <p>销量排行推荐</p>
+                                </div>
+                                <div class="second_img">
+                                    <img src="upload/img13.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="shop2_content border">
+                                <div class="shop2_text">
+                                    <span>拍拍好物品</span>
+                                    <p>iphone五折起</p>
+                                </div>
+                                <div class="second_img">
+                                    <img src="upload/img14.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="shop2_content border">
+                                <div class="shop2_text">
+                                    <span>新品首发</span>
+                                    <p>vivo X27</p>
+                                </div>
+                                <div class="second_img">
+                                    <img src="upload/img15.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="shop2_content border">
+                                <div class="shop2_text">
+                                    <span>发现好货</span>
+                                    <p>教你买买买</p>
+                                </div>
+                                <div class="second_img">
+                                    <img src="upload/img16.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad_banner" style="margin-top: 5px;margin-bottom: 5px ">
+                    <img src="upload/ad_banner3.jpg" alt="">
+                </div>
+            </div>
+            <div class="floor-the-container">
+                <div class="main-container">
+                    <ul>
+                        <li><a href="javascript:;">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="upload/product1.jpg" alt="">
+                                </div>
+                                <span class="product-text">得峰（Deffad）酷睿i7 学生本 超极本 超簿本 游戏本笔记本电脑 全尺寸键盘带刻录光驱 轻簿本 黑色 奔腾N3520-自动超频-无光驱 8G内存SSD120G硬盘</span>
+                                <p class="similar-product-info">
+                                    <span class="similar-product-price">￥
+                                        <span class="big-price">1999</span>
+                                    </span>
+                                    <span class="price-tag">闪购</span>
+                                    <span class="see-similar">看相似</span>
+                                </p>
+                                <p class="similar-product-info"></p>
+                            </div>
+                        </a></li>
+                        <li><a href="javascript:;">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="upload/product2.jpg" alt="">
+                                </div>
+                                <span class="product-text">
+                                    <img src="img/ziying.png" class="special"  alt="">
+                                    JavaScript高级程序设计（第3版）</span>
+                                <p class="similar-product-info">
+                                    <span class="similar-product-price">￥
+                                        <span class="big-price">78.2</span>
+                                    </span>
+                                    <span class="see-similar">看相似</span>
+                                </p>
+                                <p class="similar-product-info"></p>
+                            </div>
+                        </a></li>
+                        <li><a href="javascript:;">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="upload/product3.jpg" alt="">
+                                </div>
+                                <span class="product-text">响量（XIANG）单耳带电池仓迷你苹果华为半入耳式ip8耳机超小隐形ip7耳塞式vivo通用蓝牙耳机 银色 官方标配</span>
+                                <p class="similar-product-info">
+                                    <span class="similar-product-price">￥
+                                        <span class="big-price">189</span>
+                                    </span>
+                                    <span class="price-tag">拼购</span>
+                                    <span class="see-similar">看相似</span>
+                                </p>
+                                <p class="similar-product-info"></p>
+                            </div>
+                        </a></li>
+                        <li><a href="javascript:;">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="upload/product4.jpg" alt="">
+                                </div>
+                                <span class="product-text">
+                                    <img src="img/精选.png" class="special"  alt="">
+                                    罗技（G）G502 HERO主宰者有线鼠标 游戏鼠标 英雄联盟定制版 RGB鼠标 电竞鼠标 LOL奥德赛主题 自营 16000DPI</span>
+                                <p class="similar-product-info">
+                                    <span class="similar-product-price">￥
+                                        <span class="big-price">429</span>
+                                    </span>
+                                    <span class="see-similar">看相似</span>
+                                </p>
+                                <p class="similar-product-info">
+                                    <span class="plus-price">￥&nbsp;379</span>
+                                </p>
+                            </div>
+                        </a></li>
+                        <li><a href="javascript:;">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="upload/product5.jpg" alt="">
+                                </div>
+                                <span class="product-text">                                                          得峰（Deffad）15.6英寸窄边框 超簿本游戏本办公本轻薄笔记本电脑 超级本 学生本 女生笔记本 银色-全面屏镱面-支持WIN7/10+ 2G内存32G存储</span>
+                                <p class="similar-product-info">
+                                    <span class="similar-product-price">￥
+                                        <span class="big-price">1399</span>
+                                    </span>
+                                    <span class="price-tag">满减</span>
+                                    <span class="see-similar">看相似</span>
+                                </p>
+                                <p class="similar-product-info"></p>
+                            </div>
+                        </a></li>
+                        <li><a href="javascript:;">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="upload/product6.jpg" alt="">
+                                </div>
+                                <span class="product-text">
+                                    <img src="img/ziying.png" class="special"  alt="">
+                                    绿巨能（llano）笔记本支架 升降桌3档调节 便携折叠电脑支架 置物架 护颈椎笔记本电脑支架 散热架 旋转款</span>
+                                <p class="similar-product-info">
+                                    <span class="similar-product-price">￥
+                                        <span class="big-price">149</span>
+                                    </span>
+                                    <span class="price-tag">满减</span>
+                                    <span class="see-similar">看相似</span>
+                                </p>
+                                <p class="similar-product-info"></p>
+                            </div>
+                        </a></li>
+                        <li><a href="javascript:;">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="upload/product7.jpg" alt="">
+                                </div>
+                                <span class="product-text">
+                                    <img src="img/精选.png" class="special"  alt="">
+                                    仙视 Goodview  会议平板65英寸 触摸屏教学一体机 电子白板 无线投屏商用电视GM65S4</span>
+                                <p class="similar-product-info">
+                                    <span class="similar-product-price">￥
+                                        <span class="big-price">8999</span>
+                                    </span>
+                                    <span class="see-similar">看相似</span>
+                                </p>
+                                <p class="similar-product-info">
+                                    <span class="plus-price">￥&nbsp;8299</span>
+                                </p>
+                            </div>
+                        </a></li>
+                        <li><a href="javascript:;">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="upload/product8.jpg" alt="">
+                                </div>
+                                <span class="product-text">
+                                    <img src="img/ziying.png" class="special"  alt="">【一年碎屏险套装】一加 OnePlus 7 Pro 2K+90Hz 流体屏 骁龙855旗舰性能 4800万超广角三摄 8GB+256GB 曜岩灰 全面屏拍照游戏智能手机</span>
+                                <p class="similar-product-info">
+                                    <span class="similar-product-price">￥
+                                        <span class="big-price">4699</span>
+                                    </span>
+                                    <span class="price-tag">新品</span>
+                                    <span class="see-similar">看相似</span>
+                                </p>
+                                <p class="similar-product-info"></p>
+                            </div>
+                        </a></li>
+                    </ul>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+            <div class="click-loading">
+                <div class="loading_box">
+                    <a href="javascript:;">加载中
+                        <img src="img/loading.gif" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="commonFoot">
+                <ul class="commonList">
+                    <li><a href="javascript:;">登录</a></li>
+                    <li><a href="javascript:;">注册</a></li>
+                    <li><a href="javascript:;">客户服务</a></li>
+                    <li><a href="javascript:;">返回顶部</a></li>
+                </ul>
+                <ul class="commonList-icon">
+                    <li><a href="javascript:;">
+                        <img src="img/icon1.png" alt="">
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="img/icon2.png" alt="">
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="img/icon3.png" alt="">
+                    </a></li>
+                </ul>
+                <div class="common-copyright">
+                    Copyright © 2004-2018 京东JD.com 版权所有
+                </div>
+            </div>
+            <div class="commonNav">
+                <a href="javascript:;">
+                    <div class="icon-item">
+                        <img src="img/icon-item1.png" alt="">
+                    </div>
+                </a>
+                <a href="javascript:;">
+                    <div class="icon-item">
+                        <img src="img/icon-item2.png" alt="">
+                    </div>
+                </a>
+                <a href="javascript:;">
+                    <div class="icon-item">
+                        <img src="img/icon-item3.png" alt="">
+                    </div>
+                </a>
+                <a href="javascript:;">
+                    <div class="icon-item">
+                        <img src="img/icon-item4.png" alt="">
+                    </div>
+                </a>
+                <a href="javascript:;">
+                    <div class="icon-item">
+                        <img src="img/icon-item5.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <script>
+            (function (doc, win) {
+                var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        if (clientWidth >= 640) {
+                            docEl.style.fontSize = '29px';
+                        } else {
+                            docEl.style.fontSize = 29 * (clientWidth / 640) + 'px';
+                        }
+                    };
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                doc.addEventListener('DOMContentLoaded', recalc, false);
+            })(document, window);
+        </script>
+    </body>
+    <script>
+        window.onload=function () {
+        }
+    </script>
+</html>
