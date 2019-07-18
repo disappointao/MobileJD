@@ -1,8 +1,3 @@
-$(function () {
-    header();
-    setTime();
-    bannerEffect()
-});
 function header() {
     var banner = document.querySelector('.jd_banner');
     var bannerHeight = banner.offsetHeight;
