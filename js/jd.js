@@ -4,55 +4,17 @@ $(function () {
     bannerEffect()
 });
 function header() {
-    var banner= document.querySelector('.jd_banner');
-    var bannerHeight=banner.offsetHeight;
-    window.onscroll=function () {
-        var scroll=document.documentElement.scrollTop;
-        var ratio=scroll/bannerHeight;
-        if(ratio>=1){
-            ratio=1;
+    var banner = document.querySelector('.jd_banner');
+    var bannerHeight = banner.offsetHeight;
+    window.onscroll = function () {
+        var scroll = document.documentElement.scrollTop;
+        var ratio = scroll / bannerHeight;
+        if (ratio >= 1) {
+            ratio = 1;
         }
-        document.querySelector('.jd_header').style.background='rgba(236,49,44,'+ratio+")";
+        document.querySelector('.jd_header').style.background = 'rgba(236,49,44,' + ratio + ")";
     }
-
 }
-
-/*倒计时效果*/
-function timeBack(){
-    /*1.获取用于展示时间的span*/
-    var spans=document.querySelector(".jd_sk_time").querySelectorAll("span");
-    /*2.设置初始的倒计时时间,以秒做为单位*/
-    var totalTime=3700; //1*60*60   3700%3600=100 /60
-    /*3.开启定时器*/
-    var timerId=setInterval(function(){
-        totalTime--;
-        /*判断倒计时时间是否已经完成*/
-        if(totalTime < 0){
-            /*清除时钟*/
-            clearInterval(timerId);
-            return;
-        }
-        /*得到剩余时间中的  时  分  秒*/
-        /*获取时*/
-        var hour=Math.floor(totalTime/3600);
-
-        /*获取分*/
-        var minute=Math.floor(totalTime%3600/60);
-
-        /*获取秒*/
-        var second=Math.floor(totalTime%60);
-        /*赋值，将时间填充到span中  12*/
-        spans[0].innerHTML=Math.floor(hour/10);
-        spans[1].innerHTML=Math.floor(hour%10);
-
-        spans[3].innerHTML=Math.floor(minute/10);
-        spans[4].innerHTML=Math.floor(minute%10);
-
-        spans[6].innerHTML=Math.floor(second/10);
-        spans[7].innerHTML=Math.floor(second%10);
-    },1000);
-}
-
 /*轮播图*/
 function  bannerEffect(){
     var banner=document.querySelector(".jd_banner");
